@@ -1,4 +1,4 @@
-# 🗄️ Redis-lite — In-Memory Key-Value Store (C++20)
+# 🗄️ kv_engine — In-Memory Key-Value Store (C++20)
 
 A **concurrent, in-memory key-value store** built from scratch in C++20, inspired by Redis.  
 Supports `SET / GET / DEL / EXPIRE`, per-shard LRU eviction, TTL expiry, and 16-way sharded locking.
@@ -10,7 +10,7 @@ Supports `SET / GET / DEL / EXPIRE`, per-shard LRU eviction, TTL expiry, and 16-
 ## 📐 Architecture Overview
 
 ```
-Client (nc / redis-cli)
+Client (nc / kv-cli)
         │  TCP (port 6379)
         ▼
 ┌─────────────────────────────────────────────────┐
@@ -229,9 +229,3 @@ P99 latency : 153,237 ns
 - **Build:** `g++ -std=c++20 -pthread` / CMake
 
 ---
-
-## 👤 Author
-
-**Shivam Kachhadiya**  
-M.Tech CSE — VIT Vellore  
-[shivamsys.in](https://shivamsys.in) · [github.com/shivamkachhadiya](https://github.com/shivamkachhadiya)

@@ -1,0 +1,6 @@
+server
+benchmark
+cmake-build-debug/
+*.o
+*.exe
+.idea/
